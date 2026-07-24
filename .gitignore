@@ -1,45 +1,113 @@
+# ===========================
 # Python
+# ===========================
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
+*.so
 
+# ===========================
+# Build
+# ===========================
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ===========================
 # Virtual Environments
+# ===========================
 .venv/
 venv/
 env/
 
+# ===========================
 # Jupyter
+# ===========================
 .ipynb_checkpoints/
 
+# ===========================
+# IDE
+# ===========================
+.vscode/
+.idea/
+
+# ===========================
+# Operating System
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
 # Logs
+# ===========================
 logs/
 *.log
 
-# Training
+# ===========================
+# Outputs
+# ===========================
+outputs/
 training/checkpoints/
 training/logs/
-training/experiments/
 
-# Outputs
-outputs/
-
-# Weights
+# ===========================
+# Trained Models
+# ===========================
 weights/trained/
 
+# ===========================
 # Datasets
+# ===========================
 datasets/raw/
 datasets/processed/
 datasets/synthetic/
 datasets/benchmarks/
 
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Reference repositories
+# ===========================
+# Reference Repositories
+# ===========================
 references/
+
+# ===========================
+# HuggingFace
+# ===========================
+.cache/
+huggingface/
+
+# ===========================
+# ONNX / TensorRT
+# ===========================
+*.onnx
+*.engine
+
+# ===========================
+# PyTorch
+# ===========================
+*.pth
+*.pt
+*.ckpt
+
+# ===========================
+# WandB
+# ===========================
+wandb/
+
+# ===========================
+# Testing
+# ===========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===========================
+# Static Analysis
+# ===========================
+.mypy_cache/
+.ruff_cache/
+
+# ===========================
+# Kaggle
+# ===========================
+kaggle.json

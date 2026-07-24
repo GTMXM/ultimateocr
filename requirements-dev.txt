@@ -1,0 +1,8 @@
+-r requirements.txt
+
+pytest
+ruff
+black
+isort
+pre-commit
+mypy

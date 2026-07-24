@@ -1,0 +1,17 @@
+numpy
+opencv-python
+torch
+torchvision
+albumentations
+Pillow
+PyYAML
+tqdm
+shapely
+pyclipper
+huggingface_hub
+datasets
+transformers
+timm
+rapidfuzz
+onnx
+onnxruntime-gpu
