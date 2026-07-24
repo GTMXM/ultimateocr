@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Training
+training/checkpoints/
+training/logs/
+training/experiments/
+
+# Outputs
+outputs/
+
+# Weights
+weights/trained/
+
+# Datasets
+datasets/raw/
+datasets/processed/
+datasets/synthetic/
+datasets/benchmarks/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reference repositories
+references/
