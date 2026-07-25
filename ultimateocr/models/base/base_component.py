@@ -1,8 +1,5 @@
 """
 Base component contract.
-
-Every reusable model component in UltimateOCR derives from
-BaseComponent.
 """
 
 from __future__ import annotations
@@ -12,23 +9,22 @@ from typing import Any
 
 import torch.nn as nn
 
+from ultimateocr.models.common import ComponentType
+
 
 class BaseComponent(nn.Module, ABC):
     """
-    Root class for reusable UltimateOCR components.
+    Root class for every reusable UltimateOCR component.
     """
 
-    COMPONENT_TYPE = "component"
+    COMPONENT_TYPE = ComponentType.MODULE
 
     def __init__(self) -> None:
         super().__init__()
 
     @property
-    def component_type(self) -> str:
+    def component_type(self) -> ComponentType:
         return self.COMPONENT_TYPE
 
     def get_config(self) -> dict[str, Any]:
-        """
-        Return a serializable configuration dictionary.
-        """
         return {}
